@@ -3,7 +3,7 @@ val: ../valid/images
 test: ../test/images
 
 nc: 1
-names: ['person']
+names: ['Civilian']
 
 roboflow:
   workspace: tetst-vzfgv
