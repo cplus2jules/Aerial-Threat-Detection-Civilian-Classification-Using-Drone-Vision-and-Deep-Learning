@@ -1,5 +1,4 @@
 # (SALAS) for pre-trained models only
-
 import cv2
 import os
 from ultralytics import YOLO
@@ -7,18 +6,18 @@ import argparse
 
 DEFAULT_BASE_MODEL = "yolov8n.pt"
 
-# Dataset paths (for training)
+# dataset paths (for training)
 DEFAULT_DATASET_DIR = "datasets/Look_Down_Folks_Dataset" 
 DEFAULT_DATA_YAML = os.path.join(DEFAULT_DATASET_DIR, "data.yaml")
 
-# Path to your pre-trained model (after training)
+# path to your pre-trained model (after training)
 DEFAULT_TRAINED_MODEL = "/Users/juliansalas/Desktop/CSC 126/LABS/FINAL LAB PROJECT/weights/best.pt"
 
-# Input media for prediction
+# input media for prediction
 DEFAULT_IMAGE_TO_PREDICT = "/Users/juliansalas/Desktop/CSC 126/LABS/FINAL LAB PROJECT/test/images/test.jpeg" 
 DEFAULT_VIDEO_TO_PREDICT = "/Users/juliansalas/Desktop/CSC 126/LABS/FINAL LAB PROJECT/test/videos/People Walking in the Street Drone Footage.mp4" 
 
-# Output paths for predictions
+# output paths for predictions
 DEFAULT_OUTPUT_IMAGE_DIR = "/Users/juliansalas/Desktop/CSC 126/LABS/FINAL LAB PROJECT/output/images"
 DEFAULT_OUTPUT_VIDEO_DIR = "/Users/juliansalas/Desktop/CSC 126/LABS/FINAL LAB PROJECT/output/videos"
 
@@ -92,7 +91,7 @@ def predict_on_video(model_path, video_path, output_dir, display_video=False):
     
     base_filename = os.path.basename(video_path)
     name, ext = os.path.splitext(base_filename)
-    output_filename = os.path.join(output_dir, f"{name}_annotated.mp4") # Always save as .mp4 for simplicity
+    output_filename = os.path.join(output_dir, f"{name}_annotated.mp4") 
 
     fourcc = cv2.VideoWriter_fourcc(*'MP4V')
     out = cv2.VideoWriter(output_filename, fourcc, fps, (frame_width, frame_height))
