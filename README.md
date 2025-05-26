@@ -106,7 +106,7 @@ The script uses command-line arguments to know what to do and which files to use
     However, for clarity and avoiding errors, **it's often better to specify the paths directly in the command line as shown in examples 1 and 2.**
 
 ---
-**Training a New AI Model (Reference Only - See Important Note at the Top)**
+**Training a New Model (Reference Only - See Important Note at the Top)**
 *   While the script contains a training function, it's recommended to use the Colab notebook for training.
 *   If you were to use the local script for training (ensure dataset is prepared as per earlier Setup Step 4 for training):
     ```bash
@@ -118,19 +118,4 @@ The script uses command-line arguments to know what to do and which files to use
 ## 💡 Understanding the Output
 *   **Image Prediction:** An annotated image (with boxes drawn around detected people) will be saved in the folder specified by `--output_dir_img` (default: `output_media/images/`). An image window will also pop up during the process.
 *   **Video Prediction:** An annotated video (with boxes drawn around detected people in each frame) will be saved in the folder specified by `--output_dir_vid` (default: `output_media/videos/`).
-
-## 🤔 Troubleshooting Common Issues
-*   **`run_yolo_local.py: error: the following arguments are required: --action`**: You forgot to tell the script what to do. Add `--action predict_image` or `--action predict_video`.
-*   **"File not found" error (e.g., for model or input image/video):**
-    *   Carefully check the full path you provided in the command line argument (e.g., for `--trained_model` or `--image_input`).
-    *   Ensure the file actually exists at that exact location. Spelling and case sensitivity (on some systems) matter!
-    *   Use absolute paths (e.g., `/Users/YourName/Documents/YOLO_Detection_Project/trained_models/best.pt`) if you're unsure about relative paths.
-*   **`AttributeError: 'NoneType' object has no attribute 'ndim'` (or similar OpenCV errors during prediction):**
-    *   This usually means the image or video file specified by `--image_input` or `--video_input` could not be opened or read properly by OpenCV.
-    *   The file might be corrupted, not a valid image/video format, or the path might be subtly wrong even if the file exists. Try opening the file with a standard image/video viewer first.
-*   **No detections or poor detections:**
-    *   The AI model might not be suitable for the specific images/videos.
-    *   Lighting, angle, or image quality can affect performance.
-*   **Python or pip command not recognized:**
-    *   Python might not be installed correctly or added to your system's PATH. Revisit [python.org](https://www.python.org/downloads/).
 
