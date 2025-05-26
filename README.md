@@ -1,13 +1,7 @@
 # Final Project (SALAS): "Aerial Threat Detection: Civilian Classification Using Drone Vision and Deep Learning" 
 
-## 🌟 Project Overview
-This project uses an Artificial Intelligence (AI) model (specifically YOLOv8) to detect people in images and videos taken from an aerial perspective, similar to drone footage. The goal is to identify individuals, which has applications in areas like reconnaissance, safety monitoring, and humanitarian aid.
-
-This `README` file will guide you on how to set up and use the provided Python script (`run_yolo_local.py`) to perform detections.
-
----
 **IMPORTANT NOTE:**
-*   This `run_yolo_local.py` script is primarily a **Python (.py) version for running detections using a pre-trained model.**
+*   This `run_yolo_look.py` script is primarily a **Python (.py) version for running detections using a pre-trained model.**
 *   While the script includes a training function, **it was not the primary method used or extensively tested for training the model for this project.**
 *   **For details on the model training process, please refer to the original Google Colab notebook (`.ipynb` file).** It is recommended to train your model using the Colab notebook, download the resulting weights (`best.pt` file), and then use *this* local script for running detections with those downloaded weights.
 ---
@@ -22,7 +16,7 @@ Before you begin, make sure you have the following installed on your computer:
 Follow these steps carefully to get the project ready to run:
 
 **Step 1: Get the Project Files**
-*   Download all the project files and folders. This includes `run_yolo_local.py`, and you should create folders like `trained_models/`, `input_media/`, and `output_media/`.
+*   Download all the project files and folders. This includes `run_yolo_look.py`, and you should create folders like `trained_models/`, `input_media/`, and `output_media/`.
 *   Place them together in one main project folder on your computer (e.g., `C:\Users\YourName\Desktop\YOLO_Detection_Project` or `/Users/YourName/Documents/YOLO_Detection_Project`). We'll call this your "project directory".
 
 **Step 2: Install Required Software Libraries**
