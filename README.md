@@ -134,5 +134,3 @@ The script uses command-line arguments to know what to do and which files to use
 *   **Python or pip command not recognized:**
     *   Python might not be installed correctly or added to your system's PATH. Revisit [python.org](https://www.python.org/downloads/).
 
----
-We hope this guide helps you use the person detection script effectively!
