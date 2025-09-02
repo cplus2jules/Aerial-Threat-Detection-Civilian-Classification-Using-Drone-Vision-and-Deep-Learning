@@ -1,5 +1,7 @@
 # Final Project (SALAS): "Aerial Threat Detection: Civilian Classification Using Drone Vision and Deep Learning" 
 
+_Developed for the coursework CSC 126_
+
 **IMPORTANT NOTE:**
 *   This `run_yolo_look.py` script is primarily a **Python (.py) version for running detections using a pre-trained model.**
 *   While the script includes a training function, **it was not the primary method used or extensively tested for training the model for this project.**
