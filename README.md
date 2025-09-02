@@ -41,11 +41,14 @@ For running detections effectively, organize your files as follows:
 
 your_project_directory/
 ├── run_yolo_local.py # The main Python script
+
 ├── trained_models/ # << Place your pre-trained .pt model file HERE
 │ └── your_best_model.pt # (e.g., best.pt from Colab)
+
 ├── input_media/ # << Place images/videos you want to test HERE
 │ ├── test_image.jpg
 │ └── test_video.mp4
+
 └── output_media/ # Annotated images/videos will be saved here by the script
 ├── images/
 └── videos/
