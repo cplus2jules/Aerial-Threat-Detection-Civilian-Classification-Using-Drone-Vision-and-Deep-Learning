@@ -1,4 +1,4 @@
-# Final Project (SALAS): "Aerial Threat Detection: Civilian Classification Using Drone Vision and Deep Learning" 
+# "Aerial Threat Detection: Civilian Classification Using Drone Vision and Deep Learning" 
 
 _Developed as a final project for the coursework CSC 126_
 
